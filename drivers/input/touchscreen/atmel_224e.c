@@ -1057,8 +1057,6 @@ static void msg_process_multitouch(struct atmel_ts_data *ts, uint8_t *data, uint
 					
 				}
 			}
-		}
-
 			break;
 			case RECALIB_NG:
 				if (ts->finger_count == 0)
@@ -1067,6 +1065,9 @@ static void msg_process_multitouch(struct atmel_ts_data *ts, uint8_t *data, uint
 			default:
 				break;
 		}
+
+			
+		
 
 	} else if (data[T9_MSG_STATUS] & (T9_MSG_STATUS_DETECT|T9_MSG_STATUS_PRESS)) {
 		if (ts->finger_pressed & BIT(idx))
