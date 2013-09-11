@@ -95,13 +95,13 @@ static void set_acpuclk_L2_freq_foot_print(unsigned khz)
 
 #define L_VAL_SCPLL_CAL_MIN	0x08 
 
-#define MAX_VDD_SC		1325000 
-#define MAX_VDD_MEM		1325000 
-#define MAX_VDD_DIG		1200000 
-#define MAX_AXI			 310500 
-#define SCPLL_LOW_VDD_FMAX	 594000 
-#define SCPLL_LOW_VDD		1000000 
-#define SCPLL_NOMINAL_VDD	1100000 
+#define MAX_VDD_SC		1400000 /* uV */
+#define MAX_VDD_MEM		1450000 /* uV */
+#define MAX_VDD_DIG		1300000 /* uV */
+#define MAX_AXI			 310500 /* KHz */
+#define SCPLL_LOW_VDD_FMAX	 594000 /* KHz */
+#define SCPLL_LOW_VDD		1000000 /* uV */
+#define SCPLL_NOMINAL_VDD	1100000 /* uV */
 
 #define SCPLL_POWER_DOWN	0
 #define SCPLL_BYPASS		1
